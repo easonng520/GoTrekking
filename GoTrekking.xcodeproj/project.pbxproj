@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */; };
+		EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */; };
+		EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC52A32F9D400898A64 /* ViewController.swift */; };
+		EC6BCAC92A32F9D400898A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BCAC72A32F9D400898A64 /* Main.storyboard */; };
+		EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCACA2A32F9D400898A64 /* GoTrekking.xcdatamodeld */; };
+		EC6BCACE2A32F9D500898A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6BCACD2A32F9D500898A64 /* Assets.xcassets */; };
+		EC6BCAD12A32F9D500898A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */; };
+		EC6BCADC2A32F9D500898A64 /* GoTrekkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCADB2A32F9D500898A64 /* GoTrekkingTests.swift */; };
+		EC6BCAE62A32F9D500898A64 /* GoTrekkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */; };
+		EC6BCAE82A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC6BCAD82A32F9D500898A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6BCAB62A32F9D400898A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6BCABD2A32F9D400898A64;
+			remoteInfo = GoTrekking;
+		};
+		EC6BCAE22A32F9D500898A64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC6BCAB62A32F9D400898A64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC6BCABD2A32F9D400898A64;
+			remoteInfo = GoTrekking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC6BCABE2A32F9D400898A64 /* GoTrekking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTrekking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC6BCAC52A32F9D400898A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC6BCAC82A32F9D400898A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC6BCACB2A32F9D400898A64 /* GoTrekking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoTrekking.xcdatamodel; sourceTree = "<group>"; };
+		EC6BCACD2A32F9D500898A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC6BCAD02A32F9D500898A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC6BCAD22A32F9D500898A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6BCAD72A32F9D500898A64 /* GoTrekkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTrekkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6BCADB2A32F9D500898A64 /* GoTrekkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingTests.swift; sourceTree = "<group>"; };
+		EC6BCAE12A32F9D500898A64 /* GoTrekkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTrekkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITests.swift; sourceTree = "<group>"; };
+		EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC6BCABB2A32F9D400898A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6BCAD42A32F9D500898A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6BCADE2A32F9D500898A64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC6BCAB52A32F9D400898A64 = {
+			isa = PBXGroup;
+			children = (
+				EC6BCAC02A32F9D400898A64 /* GoTrekking */,
+				EC6BCADA2A32F9D500898A64 /* GoTrekkingTests */,
+				EC6BCAE42A32F9D500898A64 /* GoTrekkingUITests */,
+				EC6BCABF2A32F9D400898A64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC6BCABF2A32F9D400898A64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC6BCABE2A32F9D400898A64 /* GoTrekking.app */,
+				EC6BCAD72A32F9D500898A64 /* GoTrekkingTests.xctest */,
+				EC6BCAE12A32F9D500898A64 /* GoTrekkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC6BCAC02A32F9D400898A64 /* GoTrekking */ = {
+			isa = PBXGroup;
+			children = (
+				EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */,
+				EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */,
+				EC6BCAC52A32F9D400898A64 /* ViewController.swift */,
+				EC6BCAC72A32F9D400898A64 /* Main.storyboard */,
+				EC6BCACD2A32F9D500898A64 /* Assets.xcassets */,
+				EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */,
+				EC6BCAD22A32F9D500898A64 /* Info.plist */,
+				EC6BCACA2A32F9D400898A64 /* GoTrekking.xcdatamodeld */,
+			);
+			path = GoTrekking;
+			sourceTree = "<group>";
+		};
+		EC6BCADA2A32F9D500898A64 /* GoTrekkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC6BCADB2A32F9D500898A64 /* GoTrekkingTests.swift */,
+			);
+			path = GoTrekkingTests;
+			sourceTree = "<group>";
+		};
+		EC6BCAE42A32F9D500898A64 /* GoTrekkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */,
+				EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */,
+			);
+			path = GoTrekkingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC6BCABD2A32F9D400898A64 /* GoTrekking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6BCAEB2A32F9D500898A64 /* Build configuration list for PBXNativeTarget "GoTrekking" */;
+			buildPhases = (
+				EC6BCABA2A32F9D400898A64 /* Sources */,
+				EC6BCABB2A32F9D400898A64 /* Frameworks */,
+				EC6BCABC2A32F9D400898A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoTrekking;
+			productName = GoTrekking;
+			productReference = EC6BCABE2A32F9D400898A64 /* GoTrekking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC6BCAD62A32F9D500898A64 /* GoTrekkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6BCAEE2A32F9D500898A64 /* Build configuration list for PBXNativeTarget "GoTrekkingTests" */;
+			buildPhases = (
+				EC6BCAD32A32F9D500898A64 /* Sources */,
+				EC6BCAD42A32F9D500898A64 /* Frameworks */,
+				EC6BCAD52A32F9D500898A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6BCAD92A32F9D500898A64 /* PBXTargetDependency */,
+			);
+			name = GoTrekkingTests;
+			productName = GoTrekkingTests;
+			productReference = EC6BCAD72A32F9D500898A64 /* GoTrekkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC6BCAE02A32F9D500898A64 /* GoTrekkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6BCAF12A32F9D500898A64 /* Build configuration list for PBXNativeTarget "GoTrekkingUITests" */;
+			buildPhases = (
+				EC6BCADD2A32F9D500898A64 /* Sources */,
+				EC6BCADE2A32F9D500898A64 /* Frameworks */,
+				EC6BCADF2A32F9D500898A64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC6BCAE32A32F9D500898A64 /* PBXTargetDependency */,
+			);
+			name = GoTrekkingUITests;
+			productName = GoTrekkingUITests;
+			productReference = EC6BCAE12A32F9D500898A64 /* GoTrekkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC6BCAB62A32F9D400898A64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EC6BCABD2A32F9D400898A64 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					EC6BCAD62A32F9D500898A64 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EC6BCABD2A32F9D400898A64;
+					};
+					EC6BCAE02A32F9D500898A64 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EC6BCABD2A32F9D400898A64;
+					};
+				};
+			};
+			buildConfigurationList = EC6BCAB92A32F9D400898A64 /* Build configuration list for PBXProject "GoTrekking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC6BCAB52A32F9D400898A64;
+			productRefGroup = EC6BCABF2A32F9D400898A64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC6BCABD2A32F9D400898A64 /* GoTrekking */,
+				EC6BCAD62A32F9D500898A64 /* GoTrekkingTests */,
+				EC6BCAE02A32F9D500898A64 /* GoTrekkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC6BCABC2A32F9D400898A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6BCAD12A32F9D500898A64 /* LaunchScreen.storyboard in Resources */,
+				EC6BCACE2A32F9D500898A64 /* Assets.xcassets in Resources */,
+				EC6BCAC92A32F9D400898A64 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6BCAD52A32F9D500898A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6BCADF2A32F9D500898A64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC6BCABA2A32F9D400898A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */,
+				EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */,
+				EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */,
+				EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6BCAD32A32F9D500898A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6BCADC2A32F9D500898A64 /* GoTrekkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC6BCADD2A32F9D500898A64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6BCAE62A32F9D500898A64 /* GoTrekkingUITests.swift in Sources */,
+				EC6BCAE82A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC6BCAD92A32F9D500898A64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6BCABD2A32F9D400898A64 /* GoTrekking */;
+			targetProxy = EC6BCAD82A32F9D500898A64 /* PBXContainerItemProxy */;
+		};
+		EC6BCAE32A32F9D500898A64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC6BCABD2A32F9D400898A64 /* GoTrekking */;
+			targetProxy = EC6BCAE22A32F9D500898A64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC6BCAC72A32F9D400898A64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6BCAC82A32F9D400898A64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6BCAD02A32F9D500898A64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC6BCAE92A32F9D500898A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC6BCAEA2A32F9D500898A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC6BCAEC2A32F9D500898A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H95B429RBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoTrekking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYS.GoTrekking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC6BCAED2A32F9D500898A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H95B429RBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoTrekking/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYS.GoTrekking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC6BCAEF2A32F9D500898A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H95B429RBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYS.GoTrekkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoTrekking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoTrekking";
+			};
+			name = Debug;
+		};
+		EC6BCAF02A32F9D500898A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H95B429RBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYS.GoTrekkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoTrekking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GoTrekking";
+			};
+			name = Release;
+		};
+		EC6BCAF22A32F9D500898A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H95B429RBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYS.GoTrekkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoTrekking;
+			};
+			name = Debug;
+		};
+		EC6BCAF32A32F9D500898A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H95B429RBM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NYS.GoTrekkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoTrekking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC6BCAB92A32F9D400898A64 /* Build configuration list for PBXProject "GoTrekking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6BCAE92A32F9D500898A64 /* Debug */,
+				EC6BCAEA2A32F9D500898A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6BCAEB2A32F9D500898A64 /* Build configuration list for PBXNativeTarget "GoTrekking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6BCAEC2A32F9D500898A64 /* Debug */,
+				EC6BCAED2A32F9D500898A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6BCAEE2A32F9D500898A64 /* Build configuration list for PBXNativeTarget "GoTrekkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6BCAEF2A32F9D500898A64 /* Debug */,
+				EC6BCAF02A32F9D500898A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC6BCAF12A32F9D500898A64 /* Build configuration list for PBXNativeTarget "GoTrekkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC6BCAF22A32F9D500898A64 /* Debug */,
+				EC6BCAF32A32F9D500898A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC6BCACA2A32F9D400898A64 /* GoTrekking.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC6BCACB2A32F9D400898A64 /* GoTrekking.xcdatamodel */,
+			);
+			currentVersion = EC6BCACB2A32F9D400898A64 /* GoTrekking.xcdatamodel */;
+			path = GoTrekking.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC6BCAB62A32F9D400898A64 /* Project object */;
+}
