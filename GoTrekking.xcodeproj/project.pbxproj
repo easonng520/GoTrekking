@@ -17,6 +17,7 @@
 		EC6BCADC2A32F9D500898A64 /* GoTrekkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCADB2A32F9D500898A64 /* GoTrekkingTests.swift */; };
 		EC6BCAE62A32F9D500898A64 /* GoTrekkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */; };
 		EC6BCAE82A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */; };
+		EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EC6BCAE12A32F9D500898A64 /* GoTrekkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTrekkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITests.swift; sourceTree = "<group>"; };
 		EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = ../../t1/t1/NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */,
 				EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */,
+				EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */,
 				EC6BCAC52A32F9D400898A64 /* ViewController.swift */,
 				EC6BCAC72A32F9D400898A64 /* Main.storyboard */,
 				EC6BCACD2A32F9D500898A64 /* Assets.xcassets */,
@@ -263,6 +266,7 @@
 			files = (
 				EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */,
 				EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */,
+				EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */,
 				EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */,
 				EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */,
 			);
