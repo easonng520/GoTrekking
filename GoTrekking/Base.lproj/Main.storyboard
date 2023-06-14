@@ -77,6 +77,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="eventLabel" destination="GmR-Le-Lf2" id="exS-vH-5t7"/>
                         <outlet property="timerLabel" destination="XsE-gx-FaN" id="Iec-d0-5qY"/>
                     </connections>
                 </viewController>

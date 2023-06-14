@@ -7,38 +7,44 @@
 
 import UIKit
 import Foundation
-struct Event:Codable{
-    let name: String
-    let date: String
-}
-func decodeAPI(){
-    guard let url = URL(string: "https://b.easonng520.repl.co/api/events") else{return}
-
-    let task = URLSession.shared.dataTask(with: url){
-        data, response, error in
-        
-        let decoder = JSONDecoder()
-
-        if let data = data{
-            do{
-                let tasks = try decoder.decode([Event].self, from: data)
-                tasks.forEach{ i in
-                    print(i.date)
-                }
-            }catch{
-                print(error)
-            }
-        }
-    }
-    task.resume()
-
-}
-
 
 class ViewController: UIViewController {
     var timer: Timer!
-    
+    @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    struct Event:Codable{
+        let name: String
+        let date: String
+    }
+    func decodeAPI(){
+        guard let url = URL(string: "https://b.easonng520.repl.co/api/events") else{return}
+        let task = URLSession.shared.dataTask(with: url){
+            data, response, error in
+     
+            let decoder = JSONDecoder()
+
+            if let data = data{
+                do{
+                    let tasks = try decoder.decode([Event].self, from: data)
+                    tasks.forEach{ i in
+                        print(i.date)
+                        DispatchQueue.main.async {
+                            self.eventLabel.text = i.date
+                                        }
+                    }
+                }catch{
+                    print(error)
+                }
+            }
+        }
+        task.resume()
+
+    }
+
+    let eventDateComponents = "2038-12-24 18:00:00 UTC"
+    //let eventDateComponents =  eventDate
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -48,7 +54,7 @@ class ViewController: UIViewController {
         
     }
 
-   
+
     @objc func UpdateTime() {
         let userCalendar = Calendar.current
         // Set Current Date
@@ -57,7 +63,7 @@ class ViewController: UIViewController {
         let currentDate = userCalendar.date(from: components)!
         
         // Set Event Date
-        let eventDateComponents = "2038-12-24 18:00:00 UTC"
+     
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
         let eventDate = formatter.date(from: eventDateComponents)!
