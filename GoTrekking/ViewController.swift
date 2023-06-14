@@ -57,17 +57,10 @@ class ViewController: UIViewController {
         let currentDate = userCalendar.date(from: components)!
         
         // Set Event Date
-        var eventDateComponents = DateComponents()
-        eventDateComponents.year = 2026
-        eventDateComponents.month = 01
-        eventDateComponents.day = 01
-        eventDateComponents.hour = 00
-        eventDateComponents.minute = 00
-        eventDateComponents.second = 00
-        eventDateComponents.timeZone = TimeZone(abbreviation: "GMT")
-        
-        // Convert eventDateComponents to the user's calendar
-        let eventDate = userCalendar.date(from: eventDateComponents)!
+        let eventDateComponents = "2038-12-24 18:00:00 UTC"
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
+        let eventDate = formatter.date(from: eventDateComponents)!
         
         // Change the seconds to days, hours, minutes and seconds
         let timeLeft = userCalendar.dateComponents([.day, .hour, .minute, .second], from: currentDate, to: eventDate)
