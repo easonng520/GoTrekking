@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC5AD8422A3AE4FD00B28E48 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5AD8412A3AE4FD00B28E48 /* Event.swift */; };
 		EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */; };
 		EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */; };
 		EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC52A32F9D400898A64 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC5AD8412A3AE4FD00B28E48 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EC6BCABE2A32F9D400898A64 /* GoTrekking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTrekking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */,
+				EC5AD8412A3AE4FD00B28E48 /* Event.swift */,
 				EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */,
 				EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */,
 				EC6BCAC52A32F9D400898A64 /* ViewController.swift */,
@@ -268,6 +271,7 @@
 				EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */,
 				EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */,
 				EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */,
+				EC5AD8422A3AE4FD00B28E48 /* Event.swift in Sources */,
 				EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

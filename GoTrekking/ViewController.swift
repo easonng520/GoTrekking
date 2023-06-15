@@ -12,34 +12,8 @@ class ViewController: UIViewController {
     var timer: Timer!
     @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-    struct Event:Codable{
-        let name: String
-        let date: String
-    }
-    func decodeAPI(){
-        guard let url = URL(string: "https://b.easonng520.repl.co/api/events") else{return}
-        let task = URLSession.shared.dataTask(with: url){
-            data, response, error in
-     
-            let decoder = JSONDecoder()
 
-            if let data = data{
-                do{
-                    let tasks = try decoder.decode([Event].self, from: data)
-                    tasks.forEach{ i in
-                        print(i.date)
-                        DispatchQueue.main.async {
-                            self.eventLabel.text = i.date
-                                        }
-                    }
-                }catch{
-                    print(error)
-                }
-            }
-        }
-        task.resume()
 
-    }
 
     let eventDateComponents = "2038-12-24 18:00:00 UTC"
     //let eventDateComponents =  eventDate
@@ -49,7 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
-        decodeAPI()
+ 
         NetworkMonitor.shared.startMonitoring()
         
     }
