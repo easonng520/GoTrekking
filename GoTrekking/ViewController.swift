@@ -12,9 +12,9 @@ class ViewController: UIViewController {
     var timer: Timer!
     @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-
-
-
+    @IBOutlet weak var passcodeLabel: UILabel!
+    @IBOutlet weak var passcodeTextField: UITextField!
+    @IBOutlet weak var regButton: UIButton!
     let eventDateComponents = "2038-12-24 18:00:00 UTC"
     //let eventDateComponents =  eventDate
     
@@ -23,7 +23,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
- 
+        let url = URL(string: "https://b.easonng520.repl.co/api/events")!
+          URLSession.shared.fetchData(for: url) { (result: Result<[Event], Error>) in
+            switch result {
+            case .success(let Event):
+              // A list of todos!
+                print(Event[1].date)
+                DispatchQueue.main.async {
+
+                self.timerLabel.text = Event[1].date
+
+                }
+            case .failure(let error):
+              // A failure, please handle
+                print(error)
+          }
+        }
+
         NetworkMonitor.shared.startMonitoring()
         
     }
