@@ -41,6 +41,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <segue destination="HGy-yD-9zs" kind="show" id="VGi-sZ-Mat"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo7-pr-V6X">
                                 <rect key="frame" x="120" y="375" width="147" height="34"/>
@@ -67,13 +70,15 @@
                                     <navigationItem title="Go Trekking" id="UK4-Op-Gvy"/>
                                 </items>
                             </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bro-xt-TOF">
-                                <rect key="frame" x="0.0" y="768" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Item" id="aVd-GX-9SQ"/>
-                                </items>
-                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="-------Total Step" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="p8c-NM-8pX">
+                                <rect key="frame" x="16" y="451" width="219" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iTt-Np-Yh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,21 +118,53 @@
             <objects>
                 <viewController id="HGy-yD-9zs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oC6-de-mIu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zd4-EE-H9q">
+                                <rect key="frame" x="0.0" y="755" width="200" height="97"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Share Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voq-IG-gWr">
+                                <rect key="frame" x="200" y="755" width="193" height="97"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start Trekking">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="j9U-gI-SN6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zd4-EE-H9q" firstAttribute="leading" secondItem="j9U-gI-SN6" secondAttribute="leading" id="0QE-4u-6H0"/>
+                            <constraint firstItem="j9U-gI-SN6" firstAttribute="trailing" secondItem="zd4-EE-H9q" secondAttribute="trailing" constant="178" id="5A7-bk-LYQ"/>
+                            <constraint firstItem="Voq-IG-gWr" firstAttribute="leading" secondItem="j9U-gI-SN6" secondAttribute="leading" constant="210" id="e70-Hq-OUU"/>
+                            <constraint firstItem="zd4-EE-H9q" firstAttribute="baseline" secondItem="Voq-IG-gWr" secondAttribute="baseline" id="f3T-fw-T2i"/>
+                            <constraint firstItem="zd4-EE-H9q" firstAttribute="top" secondItem="j9U-gI-SN6" secondAttribute="top" constant="696" id="oK1-OJ-w6z"/>
+                            <constraint firstItem="Voq-IG-gWr" firstAttribute="trailing" secondItem="j9U-gI-SN6" secondAttribute="trailing" id="ocO-Vh-t4f"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ymr-D6-8Qq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9XP-B4-m6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="-35"/>
+            <point key="canvasLocation" x="783.96946564885491" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemRedColor"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
