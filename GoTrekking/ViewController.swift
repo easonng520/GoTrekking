@@ -15,9 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var passcodeLabel: UILabel!
     @IBOutlet weak var passcodeTextField: UITextField!
     @IBOutlet weak var regButton: UIButton!
-    let eventDateComponents = "2023-06-29 09:00:00 UTC"
+  // var eventDateComponents = "2023-06-29 09:00:00 UTC"
     //let eventDateComponents =  eventDate
-    
+    var eventDateComponents = "2023-06-29 09:00:00 UTC"
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,6 @@ class ViewController: UIViewController {
         regButton.addTarget(nil, action: #selector(ViewController.login), for: .touchUpInside)
 
         
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
         let url = URL(string: "https://b.easonng520.repl.co/api/events")!
           URLSession.shared.fetchData(for: url) { (result: Result<[Event], Error>) in
             switch result {
@@ -37,10 +37,15 @@ class ViewController: UIViewController {
                     self.eventLabel.text = Event[1].name
 
                 self.timerLabel.text = Event[1].date
+                    self.eventDateComponents = Event[1].date
+                    self.eventDateComponents = "2023-06-29 09:00:00 UTC"
+
+                    self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
 
                 }
             case .failure(let error):
               // A failure, please handle
+                self.eventDateComponents = "2023-06-29 09:00:00 UTC"
                 print(error)
           }
         }
