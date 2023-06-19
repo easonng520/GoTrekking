@@ -1,3 +1,10 @@
+//
+//  AppDelegate.swift
+//  GoTrekking
+//
+//  Created by eazz on 9/6/2023.
+//
+
 import UIKit
 import MapKit
 import CoreMotion
@@ -11,7 +18,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     @IBOutlet weak var eventName: UINavigationItem!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var nickname: UITextField!
-    
+
+    //Timer
+    var timer: Timer!
+    var eventDateComponents = "2023-06-29 09:00:00 UTC"
+    @IBOutlet weak var timerLabel: UILabel!
+    //timer
+
     //Step
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
@@ -28,7 +41,34 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Start Timer
+        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.UpdateTime), userInfo: nil, repeats: true)
+        //Start Timer
+        
+        //Get Event Date
+        let url = URL(string: "https://b.easonng520.repl.co/api/events")!
+          URLSession.shared.fetchData(for: url) { (result: Result<[Event], Error>) in
+            switch result {
+            case .success(let Event):
+                print(Event[0].name)
+                print(Event[0].date)
+                DispatchQueue.main.async {
+                    self.navigationController?.title = Event[0].name
+                // self.eventName.text = Event[0].name
+              // self.eventDateComponents = Event[0].date
+                               }
+            case .failure(let error):
+              // A failure, please handle
+              //self.eventDateComponents = "2022-06-29 09:00:00 UTC"
+                print(error)
+          }
+        }
+       //Get Event Data
+        NetworkMonitor.shared.startMonitoring()
+        
     }
+    
+ 
     
     @IBAction func postMethodAction(_ sender: UIButton) { postMethod() }
     
@@ -435,6 +475,46 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
 
     }
     
+ 
+    //Timer
+    @objc func UpdateTime() {
+        let userCalendar = Calendar.current
+        // Set Current Date
+        let date = Date()
+        let components = userCalendar.dateComponents([.hour, .minute, .month, .year, .day, .second], from: date)
+        let currentDate = userCalendar.date(from: components)!
+        
+        // Set Event Date
+     
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
+        let eventDate = formatter.date(from: eventDateComponents)!
+        
+        // Change the seconds to days, hours, minutes and seconds
+        let timeLeft = userCalendar.dateComponents([.day, .hour, .minute, .second], from: currentDate, to: eventDate)
+        
+        // Display Countdown
+        timerLabel.text = "Event will start in\n\(timeLeft.day!)d \(timeLeft.hour!)h \(timeLeft.minute!)m \(timeLeft.second!)s"
+        
+        // Show diffrent text when the event has passed
+        endEvent(currentdate: currentDate, eventdate: eventDate)
+    }
+    
+    func endEvent(currentdate: Date, eventdate: Date) {
+        if currentdate >= eventdate {
+            //timerLabel.text = "Happy New Year!"
+            // Stop Timer
+           // eventLabel.isHidden = true
+            //timerLabel.isHidden = true
+            //passcodeTextField.isEnabled = true
+            timer.invalidate()
+        }else{
+            //eventLabel.isHidden =  false
+            timerLabel.isHidden =  false
+            
+        }
+    }
+    //Timer
     
     
 }

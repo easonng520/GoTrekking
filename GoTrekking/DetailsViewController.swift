@@ -1,9 +1,8 @@
 //
-//  DetailsViewController.swift
-//  HTTPMethodsExample
+//  AppDelegate.swift
+//  GoTrekking
 //
-//  Created by John Codeos on 3/8/20.
-//  Copyright © 2020 John Codeos. All rights reserved.
+//  Created by eazz on 9/6/2023.
 //
 
 import UIKit

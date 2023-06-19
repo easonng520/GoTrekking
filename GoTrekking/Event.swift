@@ -1,8 +1,8 @@
 //
-//  Event.swift
+//  AppDelegate.swift
 //  GoTrekking
 //
-//  Created by eazz on 15/6/2023.
+//  Created by eazz on 9/6/2023.
 //
 
 
