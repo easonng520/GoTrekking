@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     var eventDateComponents = "2023-06-27 09:00:00 UTC"
     override func viewDidLoad() {
+        eventDateComponents = "2022-06-27 09:00:00 UTC"
         eventTitle.isHidden = true
         eventDate.isHidden = true
         timerText.isHidden = true
@@ -53,8 +54,8 @@ class ViewController: UIViewController {
                     
                     self.eventTitle.isHidden = false
                     self.eventDate.isHidden = false
-                    self.timerText.isHidden = false
-                    self.timerLabel.isHidden = false
+                    //self.timerText.isHidden = false
+                    //self.timerLabel.isHidden = false
                     self.passcodeLabel.isHidden = false
                     self.passcodeTextField.isHidden = false
                     self.or.isHidden = false
@@ -108,17 +109,26 @@ class ViewController: UIViewController {
         if currentdate >= eventdate {
            
             // Stop Timer
-   //         eventLabel.isHidden = true
-    //        timerLabel.isHidden = true
+            self.timerText.isHidden = true
+            self.timerLabel.isHidden = true
             passcodeTextField.isEnabled = true
             timer.invalidate()
         }else{
-            //eventLabel.isHidden =  false
-            //timerLabel.isHidden =  false
+            self.timerText.isHidden = false
+            self.timerLabel.isHidden = false
             
         }
     }
     
-    
+    @objc func alertSignin() {
+        let alertController = UIAlertController(title: "!", message: "Msg", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+            (action: UIAlertAction!) -> Void in
+            //print("error")
+        })
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+
     
 }

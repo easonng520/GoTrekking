@@ -158,7 +158,7 @@ class Registration: UIViewController {
         let alertController = UIAlertController(title: "!", message: "Input invalid", preferredStyle: .alert)
       let okAction = UIAlertAction(title: "OK", style: .default, handler: {
             (action: UIAlertAction!) -> Void in
-            print("Error")
+            //print("Error")
         })
         alertController.addAction(okAction)
        self.present(alertController, animated: true, completion: nil)
