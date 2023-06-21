@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var detailsVCPrintedJson: String?
     var detailsVCTitle: String?
     
+    @IBOutlet weak var navTitle: UINavigationItem!
     @IBOutlet weak var eventName: UILabel!
     @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
     
     var eventDateComponents = "2023-06-27 09:00:00 UTC"
     override func viewDidLoad() {
-     eventName.isHidden = true
+        eventName.isHidden = true
      eventDate.isHidden = true
         timerText.isHidden = true
         timerLabel.isHidden = true
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
                 print(Event[0].name)
                 print(Event[0].date)
                 DispatchQueue.main.async {
+                   // self.navTitle.title = Event[0].name
                  self.eventName.text = Event[0].name
                     self.eventDate.text = Event[0].date
                     
