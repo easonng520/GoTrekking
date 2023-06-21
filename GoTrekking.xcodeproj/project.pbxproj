@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC51D6992A42CF7B001D7295 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC51D6982A42CF7B001D7295 /* Registration.swift */; };
 		EC5AD8422A3AE4FD00B28E48 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5AD8412A3AE4FD00B28E48 /* Event.swift */; };
 		EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */; };
 		EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC51D6982A42CF7B001D7295 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		EC5AD8412A3AE4FD00B28E48 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EC6BCABE2A32F9D400898A64 /* GoTrekking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTrekking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */,
 				EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */,
 				EC6BCAC52A32F9D400898A64 /* ViewController.swift */,
+				EC51D6982A42CF7B001D7295 /* Registration.swift */,
 				EC6BCAC72A32F9D400898A64 /* Main.storyboard */,
 				EC6BCACD2A32F9D500898A64 /* Assets.xcassets */,
 				EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */,
+				EC51D6992A42CF7B001D7295 /* Registration.swift in Sources */,
 				EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */,
 				EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */,
 				EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */,
