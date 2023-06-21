@@ -10,17 +10,15 @@
 		EC5AD8422A3AE4FD00B28E48 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5AD8412A3AE4FD00B28E48 /* Event.swift */; };
 		EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */; };
 		EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */; };
+		EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAC52A32F9D400898A64 /* ViewController.swift */; };
+		EC6BCAC92A32F9D400898A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BCAC72A32F9D400898A64 /* Main.storyboard */; };
+		EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCACA2A32F9D400898A64 /* GoTrekking.xcdatamodeld */; };
 		EC6BCACE2A32F9D500898A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6BCACD2A32F9D500898A64 /* Assets.xcassets */; };
 		EC6BCAD12A32F9D500898A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */; };
 		EC6BCADC2A32F9D500898A64 /* GoTrekkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCADB2A32F9D500898A64 /* GoTrekkingTests.swift */; };
 		EC6BCAE62A32F9D500898A64 /* GoTrekkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */; };
 		EC6BCAE82A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */; };
 		EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */; };
-		EC7A4B0B2A428A670042846A /* GoTrekking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7A4B0A2A428A670042846A /* GoTrekking.swift */; };
-		ECC37AFB2A416E73004CB9A1 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC37AF92A416E70004CB9A1 /* PaddingLabel.swift */; };
-		ECD0CD872A400E6F004A011E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD0CD842A400E6F004A011E /* Main.storyboard */; };
-		ECD0CD882A400E6F004A011E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0CD852A400E6F004A011E /* DetailsViewController.swift */; };
-		ECD0CD892A400E6F004A011E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD0CD862A400E6F004A011E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +43,9 @@
 		EC6BCABE2A32F9D400898A64 /* GoTrekking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTrekking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EC6BCAC52A32F9D400898A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC6BCAC82A32F9D400898A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC6BCACB2A32F9D400898A64 /* GoTrekking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoTrekking.xcdatamodel; sourceTree = "<group>"; };
 		EC6BCACD2A32F9D500898A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6BCAD02A32F9D500898A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6BCAD22A32F9D500898A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,11 +55,6 @@
 		EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITests.swift; sourceTree = "<group>"; };
 		EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = ../../t1/t1/NetworkMonitor.swift; sourceTree = "<group>"; };
-		EC7A4B0A2A428A670042846A /* GoTrekking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekking.swift; sourceTree = "<group>"; };
-		ECC37AF92A416E70004CB9A1 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
-		ECD0CD842A400E6F004A011E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		ECD0CD852A400E6F004A011E /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		ECD0CD862A400E6F004A011E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,17 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */,
-				EC7A4B0A2A428A670042846A /* GoTrekking.swift */,
-				ECD0CD852A400E6F004A011E /* DetailsViewController.swift */,
-				ECD0CD842A400E6F004A011E /* Main.storyboard */,
-				ECD0CD862A400E6F004A011E /* ViewController.swift */,
 				EC5AD8412A3AE4FD00B28E48 /* Event.swift */,
 				EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */,
 				EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */,
-				ECC37AF92A416E70004CB9A1 /* PaddingLabel.swift */,
+				EC6BCAC52A32F9D400898A64 /* ViewController.swift */,
+				EC6BCAC72A32F9D400898A64 /* Main.storyboard */,
 				EC6BCACD2A32F9D500898A64 /* Assets.xcassets */,
 				EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */,
 				EC6BCAD22A32F9D500898A64 /* Info.plist */,
+				EC6BCACA2A32F9D400898A64 /* GoTrekking.xcdatamodeld */,
 			);
 			path = GoTrekking;
 			sourceTree = "<group>";
@@ -248,7 +242,7 @@
 			files = (
 				EC6BCAD12A32F9D500898A64 /* LaunchScreen.storyboard in Resources */,
 				EC6BCACE2A32F9D500898A64 /* Assets.xcassets in Resources */,
-				ECD0CD872A400E6F004A011E /* Main.storyboard in Resources */,
+				EC6BCAC92A32F9D400898A64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,13 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7A4B0B2A428A670042846A /* GoTrekking.swift in Sources */,
+				EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */,
+				EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */,
 				EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */,
 				EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */,
-				ECD0CD882A400E6F004A011E /* DetailsViewController.swift in Sources */,
-				ECC37AFB2A416E73004CB9A1 /* PaddingLabel.swift in Sources */,
 				EC5AD8422A3AE4FD00B28E48 /* Event.swift in Sources */,
-				ECD0CD892A400E6F004A011E /* ViewController.swift in Sources */,
 				EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +309,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EC6BCAC72A32F9D400898A64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC6BCAC82A32F9D400898A64 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		EC6BCACF2A32F9D500898A64 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -452,12 +452,11 @@
 				DEVELOPMENT_TEAM = H95B429RBM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoTrekking/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
-				INFOPLIST_KEY_NSMotionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,12 +480,11 @@
 				DEVELOPMENT_TEAM = H95B429RBM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoTrekking/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
-				INFOPLIST_KEY_NSMotionUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,6 +614,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC6BCACA2A32F9D400898A64 /* GoTrekking.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC6BCACB2A32F9D400898A64 /* GoTrekking.xcdatamodel */,
+			);
+			currentVersion = EC6BCACB2A32F9D400898A64 /* GoTrekking.xcdatamodel */;
+			path = GoTrekking.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EC6BCAB62A32F9D400898A64 /* Project object */;
 }

@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  SceneDelegate.swift
 //  GoTrekking
 //
 //  Created by eazz on 9/6/2023.
