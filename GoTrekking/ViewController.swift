@@ -10,7 +10,8 @@ import Foundation
 
 class ViewController: UIViewController {
     var timer: Timer!
-
+    var detailsVCPrintedJson: String?
+    var detailsVCTitle: String?
     
     @IBOutlet weak var navTitle: UINavigationItem!
     @IBOutlet weak var eventTitle: UILabel!
@@ -27,8 +28,20 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func passCODE(_ sender: Any) {
+        if passcodeTextField.text?.count == 6 {
+            self.performSegue(withIdentifier: "Login", sender: self)
+
+           
+
+            // getMethod()
+        }
+     
+    }
+    
     var eventDateComponents = "2023-06-27 09:00:00 UTC"
     override func viewDidLoad() {
+        
         eventDateComponents = "2022-06-27 09:00:00 UTC"
         eventTitle.isHidden = true
         eventDate.isHidden = true
@@ -120,7 +133,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @objc func alertSignin() {
+    @objc func alert() {
         let alertController = UIAlertController(title: "!", message: "Msg", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: {
             (action: UIAlertAction!) -> Void in
@@ -130,5 +143,87 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 
+    func getMethod() {
+       
+       guard var components = URLComponents(string: "https://b.easonng520.repl.co/api/trekkers/code") else {
+            print("Error: cannot create URLCompontents")
+            return
+        }
+        components.queryItems = [
+            URLQueryItem(name: "code", value: passcodeTextField.text),
+        ]
+        guard let url = components.url else {
+            print("Error: cannot create URL")
+            return
+        }
+        /*
+        guard let url = URL(string: "https://b.easonng520.repl.co/api/trekkers/1") else {
+            print("Error: cannot create URL")
+            return
+        }
+         */
+        print(url)
+        // Create the url request
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        // If you are using Basic Authentication uncomment the follow line and add your base64 string
+//        request.setValue("Basic MY_BASIC_AUTH_STRING", forHTTPHeaderField: "Authorization")
+        URLSession.shared.dataTask(with: request) { data, response, error in
+         
+            
+            guard error == nil else {
+                print("Error: error calling GET")
+                print(error!)
+                return
+            }
+            guard let data = data else {
+                print("Error: Did not receive data")
+                return
+            }
+        
+            guard let response = response as? HTTPURLResponse, (200 ..< 299) ~= response.statusCode else {
+                print("Error: HTTP request failed")
+                return
+            }
+            do {
+                guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
+                    print("Error: Cannot convert data to JSON object")
+                    return
+                }
+                guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
+                    print("Error: Cannot convert JSON object to Pretty JSON data")
+                    return
+                }
+                guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
+                    print("Error: Could print JSON in String")
+                    return
+                }
+                
+                self.openDetailsVC(jsonString: prettyPrintedJson, title: "GET METHOD")
+                print(prettyPrintedJson)
+            } catch {
+                print("Error: Trying to convert JSON data to string")
+                return
+            }
+        }.resume()
+    }
+    
+    func openDetailsVC(jsonString: String, title: String) {
+        detailsVCPrintedJson = jsonString
+        detailsVCTitle = title
+        
+       // DispatchQueue.main.async {
+        //    self.performSegue(withIdentifier: "detailsseg", sender: self)
+       // }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        //if segue.identifier == "detailsseg" {
+          //  let destViewController = segue.destination as? DetailsViewController
+           // destViewController?.title = detailsVCTitle
+           // destViewController?.jsonResults = detailsVCPrintedJson ?? ""
+       // }
+    }
     
 }
