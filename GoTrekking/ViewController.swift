@@ -23,26 +23,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var passcodeTextField: UITextField!
     @IBOutlet weak var regButton: UIButton!
     @IBOutlet weak var or: UILabel!
-    
     @IBAction func regButton(_ sender: Any) {
     }
-    
-    
-    @IBAction func passCODE(_ sender: Any) {
+   @IBAction func passCODE(_ sender: Any) {
         if passcodeTextField.text?.count == 6 {
             self.performSegue(withIdentifier: "Login", sender: self)
-
-           
-
-            // getMethod()
+       passcodeTextField.text = ""
+        getMethod()
         }
-     
-    }
-    
-    var eventDateComponents = "2023-06-27 09:00:00 UTC"
+  }
+   var eventDateComponents = "2023-06-23 19:59:00 UTC"
     override func viewDidLoad() {
-        
-        eventDateComponents = "2022-06-27 09:00:00 UTC"
+      //  regButton.accessibilityIdentifier="regButton"
+        //eventDateComponents = "2022-06-27 09:00:00 UTC"
         eventTitle.isHidden = true
         eventDate.isHidden = true
         timerText.isHidden = true

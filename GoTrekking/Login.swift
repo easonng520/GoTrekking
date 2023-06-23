@@ -32,34 +32,29 @@ class Login: UIViewController,CLLocationManagerDelegate {
     @IBAction func startTrekking(_ sender: Any) {
         startPedometerUpdates()
         startLocationUpdates()
+            
     }
     
     
-    //开始获取步数计数据
     func startPedometerUpdates() {
         steps.text = ""
         
-        //判断设备支持情况
         if CMPedometer.isStepCountingAvailable() {
-            //初始化并开始实时获取数据
             self.pedometer.startUpdates (from: Date(), withHandler: {
                 pedometerData, error in
-                //错误处理
                 guard error == nil else {
                     print(error!)
                     return
                 }
                 
-                //获取各个数据
                 var text = ""
                 if let distance = pedometerData?.distance {
-                    //text += "行走距离: \(distance)\n"
+               var text1 = distance
                 }
                 if let numberOfSteps = pedometerData?.numberOfSteps {
                     text += "\(numberOfSteps)"
                 }
                 
-                //在线程中更新文本框数据
                 DispatchQueue.main.async{
                     self.steps.text = text
                 }
@@ -71,7 +66,6 @@ class Login: UIViewController,CLLocationManagerDelegate {
         }
     }
     
-    //开始获取GPS数据
     func startLocationUpdates() {
         gps.text = ""
         startLocation = nil
@@ -90,20 +84,21 @@ class Login: UIViewController,CLLocationManagerDelegate {
         }
     }
     
-    //定位数据更新
     func locationManager(_ manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]) {
         if startLocation == nil {
             startLocation = locations.first
         } else if let location = locations.last {
-            //获取各个数据
+            self.gps.text = ""
             traveledDistance += lastLocation.distance(from: location)
-            let lineDistance = startLocation.distance(from: locations.last!)
-            var text = ""
-            text += "\(round(traveledDistance/1000))"
-            //text += "直线距离: \(lineDistance)\n"
-            print(text)
-            self.gps.text = text
+            //let lineDistance = startLocation.distance(from: locations.last!)
+            //var text = ""
+                gps.text = " \(String(format:"%.02f", traveledDistance/1000)) KM"
+            //text += "\(traveledDistance)/100000.00"
+           //text+="km"
+            //var text1 = "\(lineDistance)"
+           // gps.text = text
+           // print(text)
             
         }
         lastLocation = locations.last
