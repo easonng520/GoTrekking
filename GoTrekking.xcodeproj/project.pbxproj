@@ -22,6 +22,9 @@
 		EC6BCAE62A32F9D500898A64 /* GoTrekkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */; };
 		EC6BCAE82A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */; };
 		EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */; };
+		EC9040B02A45295A006EC4AC /* photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9040AF2A45295A006EC4AC /* photo.swift */; };
+		EC9040B22A4529A2006EC4AC /* keepPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9040B12A4529A2006EC4AC /* keepPhoto.swift */; };
+		EC9040B42A4529DD006EC4AC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9040B32A4529DD006EC4AC /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		EC6BCAE52A32F9D500898A64 /* GoTrekkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITests.swift; sourceTree = "<group>"; };
 		EC6BCAE72A32F9D500898A64 /* GoTrekkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTrekkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = ../../t1/t1/NetworkMonitor.swift; sourceTree = "<group>"; };
+		EC9040AF2A45295A006EC4AC /* photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photo.swift; sourceTree = "<group>"; };
+		EC9040B12A4529A2006EC4AC /* keepPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keepPhoto.swift; sourceTree = "<group>"; };
+		EC9040B32A4529DD006EC4AC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				EC6BCAC12A32F9D400898A64 /* AppDelegate.swift */,
+				EC9040AF2A45295A006EC4AC /* photo.swift */,
+				EC9040B12A4529A2006EC4AC /* keepPhoto.swift */,
+				EC9040B32A4529DD006EC4AC /* DetailViewController.swift */,
 				EC5AD8412A3AE4FD00B28E48 /* Event.swift */,
 				EC6BCAC32A32F9D400898A64 /* SceneDelegate.swift */,
 				EC79F2242A371C3E00164B45 /* NetworkMonitor.swift */,
@@ -276,14 +285,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC9040B22A4529A2006EC4AC /* keepPhoto.swift in Sources */,
 				EC51D69D2A42F66A001D7295 /* Login.swift in Sources */,
 				EC6BCACC2A32F9D400898A64 /* GoTrekking.xcdatamodeld in Sources */,
+				EC9040B42A4529DD006EC4AC /* DetailViewController.swift in Sources */,
 				EC51D6992A42CF7B001D7295 /* Registration.swift in Sources */,
 				EC6BCAC62A32F9D400898A64 /* ViewController.swift in Sources */,
 				EC51D69B2A42F166001D7295 /* DetailsViewController.swift in Sources */,
 				EC79F2252A371C3E00164B45 /* NetworkMonitor.swift in Sources */,
 				EC6BCAC22A32F9D400898A64 /* AppDelegate.swift in Sources */,
 				EC5AD8422A3AE4FD00B28E48 /* Event.swift in Sources */,
+				EC9040B02A45295A006EC4AC /* photo.swift in Sources */,
 				EC6BCAC42A32F9D400898A64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
