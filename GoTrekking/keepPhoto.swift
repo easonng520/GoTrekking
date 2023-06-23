@@ -16,8 +16,9 @@ class keepPhoto: UITableViewController, UIImagePickerControllerDelegate, UINavig
         
         navigationController?.navigationBar.prefersLargeTitles = true
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNewPhoto))
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(addNewPhoto))
+       
+
         title = "Photos"
         
         performSelector(inBackground: #selector(loadImages), with: nil)
@@ -104,6 +105,12 @@ class keepPhoto: UITableViewController, UIImagePickerControllerDelegate, UINavig
         
         tableView.performSelector(onMainThread: #selector(UITableView.reloadData), with: nil, waitUntilDone: false)
     }
+
+    
+    @objc func back() {
+    
+    }
+    
     
     @objc func addNewPhoto() {
         let picker = UIImagePickerController()
