@@ -85,7 +85,7 @@ class ViewController: UIViewController {
         //regButton.addTarget(nil, action: #selector(ViewController.login), for: .touchUpInside)
         
         self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
-        NetworkMonitor.shared.startMonitoring()
+        //NetworkMonitor.shared.startMonitoring()
     }
     
     @objc func UpdateTime() {
